@@ -37,6 +37,9 @@ export function CreateModal({closeModal}: ModalProps) {
         }
         mutate(foodData)
     }
+    const fechar = () => {
+        closeModal();
+    }
 
     useEffect(() => {
         if(!isSuccess) return
@@ -50,9 +53,10 @@ export function CreateModal({closeModal}: ModalProps) {
                 <form className="input-container">
                     <Input label="Nome: " value={title} updateValue={setTitle}/>
                     <Input label="Preço: " value={price} updateValue={setPrice}/>
-                    <Input label="Imagem: " value={image} updateValue={setImage}/>
+                    <Input label="Imagem: " value={image} updateValue={setImage}/>7
                 </form>
                 <button onClick={submit} className="btn-secondary">Postar</button>
+                <button onClick={fechar} className="btn-secondary">Fechar</button>
             </div>
         </div>
     )

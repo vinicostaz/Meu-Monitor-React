@@ -4,13 +4,19 @@ export function CatalogoVideos() {
 
         <div>
   <br />
+  <br />
+  <br />
 </div>
+
 
 
   <div className="container marketing">
     
+    
     <div className="row">
+      
       <div className="col-lg-4">
+        
           <select className="form-select" id="inputGroupSelect01">
             <option selected>Todos os centros</option>
             <option value="1">CCT</option>
@@ -37,8 +43,11 @@ export function CatalogoVideos() {
           <option value="4">J030 - Direito processual civil III</option>
         </select>
       </div>
+      
     </div>
+    
     <div className="row">
+      
       <div className="col-lg-6">
         <div className="card">
             <iframe width="545" height="315" src="https://www.youtube.com/embed/YVgj-tOyux4?si=gmSPUj5iBuUfs80D" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -95,6 +104,7 @@ export function CatalogoVideos() {
 
 
   </div>
+  
   <br />
   </div>
 
