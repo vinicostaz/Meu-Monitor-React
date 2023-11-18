@@ -14,3 +14,24 @@
     width: 250px;
     height: 200px;
 }
+
+#edit {
+    background-color: rgb(218, 218, 116);
+    margin: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+}
+
+#delete {
+    background-color: rgb(129, 33, 33);
+    margin: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+}
+
+.button-container {
+    display: inline-block;
+    
+  }
