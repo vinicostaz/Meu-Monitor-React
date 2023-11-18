@@ -6,11 +6,7 @@ interface CardProps {
     image: string
 }
 
-interface CardWithButtonProps extends CardProps {
-    onBuyClick: () => void;
-}
-
-export function Card({ price, image, title, onBuyClick }: CardWithButtonProps) {
+export function Card({ price, image, title }: CardProps) {
     return (
         <div className="card">
             <img src={image} alt={title} />

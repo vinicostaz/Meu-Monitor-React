@@ -55,8 +55,8 @@ export function CreateModal({closeModal}: ModalProps) {
                     <Input label="Preço: " value={price} updateValue={setPrice}/>
                     <Input label="Imagem: " value={image} updateValue={setImage}/>7
                 </form>
-                <button onClick={submit} className="btn-secondary">Postar</button>
-                <button onClick={fechar} className="btn-secondary">Fechar</button>
+                <button id="postar" onClick={submit} className="btn-secondary">Postar</button>
+                <button id="fechar"onClick={fechar} className="btn-secondary">Fechar</button>
             </div>
         </div>
     )

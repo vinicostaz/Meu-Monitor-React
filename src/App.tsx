@@ -13,11 +13,6 @@ function App() {
       setIsModalOpen(prev => !prev);
   }
 
-  const handleBuy = (foodTitle: string) => {
-      // Lógica de compra ou ação desejada ao clicar no botão "Comprar"
-      console.log(`Item "${foodTitle}" comprado.`);
-  }
-
   return (
       <div className="container">
           <h1>Cardápio</h1>
@@ -28,7 +23,6 @@ function App() {
                       price={foodData.price}
                       title={foodData.title}
                       image={foodData.image}
-                      onBuyClick={() => handleBuy(foodData.title)}
                   />
               )}
           </div>

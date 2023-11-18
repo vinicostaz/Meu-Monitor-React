@@ -16,7 +16,7 @@
 }
 
 #edit {
-    background-color: rgb(218, 218, 116);
+    background-color: rgb(61, 101, 211);
     margin: 15px;
     font-size: 12px;
     cursor: pointer;
@@ -24,7 +24,7 @@
 }
 
 #delete {
-    background-color: rgb(129, 33, 33);
+    background-color: rgb(222, 88, 88);
     margin: 15px;
     font-size: 12px;
     cursor: pointer;
