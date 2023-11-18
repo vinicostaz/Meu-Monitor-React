@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Header />
     <QueryClientProvider client={queryClient}>
-     <App />
+     {/* <App /> */}
       <Monitoria />
       <Footer />
     </QueryClientProvider>
