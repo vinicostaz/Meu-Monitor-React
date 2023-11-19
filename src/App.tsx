@@ -4,6 +4,7 @@ import { Card } from './components/card/card';
 import { FoodData } from './interface/foodData';
 import { useFoodData } from './hooks/useFoodData';
 import { CreateModal } from './components/card/create-modal/create-modal';
+import { useFoodDataDelete } from './hooks/useFoodDataDelete';
 
 function App() {
   const { data } = useFoodData();
@@ -12,6 +13,14 @@ function App() {
   const handleOpenModal = () => {
       setIsModalOpen(prev => !prev);
   }
+
+  const deleteFoodData = useFoodDataDelete();
+
+  const handleDelete = async (id?: number) => {
+    if (id) {
+        await deleteFoodData.mutate(id);
+    }
+}
 
   return (
       <div className="container">
@@ -23,6 +32,7 @@ function App() {
                       price={foodData.price}
                       title={foodData.title}
                       image={foodData.image}
+                      onDelete={() => handleDelete(foodData.id)}
                   />
               )}
           </div>

@@ -15,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Header />
     <QueryClientProvider client={queryClient}>
      {/* <App /> */}
+     <App />
       <Monitoria />
       <Footer />
     </QueryClientProvider>

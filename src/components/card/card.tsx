@@ -3,10 +3,11 @@ import './card.css';
 interface CardProps {
     price: number,
     title: string,
-    image: string
+    image: string,
+    onDelete?: () => void
 }
 
-export function Card({ price, image, title }: CardProps) {
+export function Card({ price, image, title, onDelete }: CardProps) {
     return (
         <div className="card">
             <img src={image} alt={title} />
@@ -14,7 +15,9 @@ export function Card({ price, image, title }: CardProps) {
             <p><b>Valor:</b> {price}</p>
             <div>
             <button id="edit" onClick={() => alert('Botão de editar clicado')}title="Editar Item">Editar</button>
-            <button id="delete" onClick={() => alert('Botão de deletar clicado')}title="Deletar Item">Deletar</button>
+            <button id="delete" onClick={onDelete} title="Deletar Item">
+                Deletar
+            </button>
             </div>
         </div>
     )
