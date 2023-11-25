@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import Header from './components/Header/Header.tsx';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
@@ -14,8 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Header />
     <QueryClientProvider client={queryClient}>
-     {/* <App /> */}
-     <App />
       <Monitoria />
       <Footer />
     </QueryClientProvider>

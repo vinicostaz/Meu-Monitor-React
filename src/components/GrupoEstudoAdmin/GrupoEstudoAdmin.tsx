@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import './App.css';
-import { Card } from './components/card/card';
-import { FoodData } from './interface/foodData';
-import { useFoodData } from './hooks/useFoodData';
-import { CreateModal } from './components/card/create-modal/create-modal';
-import { EditModal } from './components/card/edit-modal/edit-modal';
-import { useFoodDataDelete } from './hooks/useFoodDataDelete';
+import './GrupoEstudoAdmin.css';
+import { Card } from '../../components/card/card';
+import { FoodData } from '../../interface/foodData';
+import { useFoodData } from '../../hooks/useFoodData';
+import { CreateModal } from '../../components/card/create-modal/create-modal';
+import { EditModal } from '../../components/card/edit-modal/edit-modal';
+import { useFoodDataDelete } from '../../hooks/useFoodDataDelete';
 
-function App() {
+function grupoEstudoAdmin() {
   const { data } = useFoodData();
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
@@ -32,7 +32,10 @@ function App() {
 
 return (
     <div className="container">
-      <h1>Cardápio</h1>
+      <br/>
+      <br/>
+      <br/>
+      <h1>Grupo de Estudo</h1>
       <div className="card-grid">
         {data?.map((foodData) => (
           <Card
@@ -59,4 +62,4 @@ return (
   );
 }
 
-export default App;
+export default grupoEstudoAdmin;
